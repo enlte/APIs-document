@@ -1,6 +1,6 @@
 # APIs-document
         
-#Blockchain Wallet API
+# Blockchain Wallet API
 
 Base URL to hit all APIs: https://enlte.com/
 
@@ -44,7 +44,7 @@ Response:
 
 Here other balance is coin earn from mining.
 
-Blockchain Data API
+# Blockchain Data API
 
 1.	Single Block
 
@@ -110,7 +110,7 @@ Response:
 {"total_count":"45","txs":[  -- transaction list-- ],"status":"true" }
 
 
-Mining Data API
+# Mining Data API
 1.	Miners
 Endpoint: /transaction_blockchain/miners 
 
