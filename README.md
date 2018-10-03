@@ -2,7 +2,7 @@
         
 # Blockchain Wallet API
 
-Base URL to hit all APIs: https://enlte.com/
+The Base URL for all APIs: https://enlte.com/
 
 1.	Creating a new Blockchain Wallet
 
