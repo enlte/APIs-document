@@ -14,9 +14,11 @@ Query Parameters:
 Response: 
 ```
 {
-  "guid": "05f290be-dbef-4636-a809-868893c51711",
-  "address": "13R9dBgKwBP29JKo11zhfi74YuBsMxJ4qY",
-  "status": "true"
+    "status": "true",
+    "address": "elt0620mdyymdu0otk1n2y0ywq2mgnlnme3ma67f",
+    "private_key": "c7d2c1bc9d4513a202b0af7aa529457c507ba170a3169598d024cd7043be94ee",
+    "public_key": "4f42549957f4ad60ce6a73b252ea4f34491ccaa1645397e3d81dd41354b38c64",
+    "raw_data": "mQuQP56qLiHxT/5fvHaPg2z2asrIZ0Ph+t37+p6+cM/gwSM6Q7pPfmefXGbFrAB/roFmruP3KOIiD7seTtN3JWNkzUI9vYU+wvQKytPDoLw+TU69PjNELQqi+jwyJu6/.6ea10e70576d79b93e0cb8f09f99b3f7139e84e2caf477b3fae3e49038f798a4"
 }
 ```
 
