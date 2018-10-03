@@ -62,8 +62,11 @@ Endpoint: /transaction_blockchain/single_block
 Query Parameters:
 
 •	block_id – block id of process transactions (required)
+
 •	trans_index – transaction index to load next page transactions (optional)
+
 •	loading_type – it is required to load next & previous page. (optional) e.g. next/prev/first/last
+
 Note: To load next page, APIs required the index of last transaction from list. And to load previous page, APIs required the index of first transaction from list.
 Response: 
 
@@ -119,8 +122,11 @@ Endpoint: /transaction_blockchain/transactions_list
 Query Parameters:
 
 •	wallet_id – public address of user (optional)
+
 •	trans_index – transaction index to load next page transactions (optional)
+
 •	loading_type – it is required to load next & previous page. (optional) e.g. next/prev/first/last
+
 
 Note: 
 1.	To load next page, APIs required the index of last transaction from list. And to load previous page, APIs required the index of first transaction from list.
@@ -161,6 +167,7 @@ Endpoint: /transaction_blockchain/broadcast_unprocessed_hash
 Query Parameters: 
 
 •	index – this input is required to load next page transaction (optional) 
+
 Response:
 ```
 {
@@ -178,11 +185,17 @@ Endpoint: /transaction_blockchain/vote_transactions
 Query Parameters: 
 
 •	tx_ids – it is a list of transaction ids for validating (required) 
+
 •	tx_indexes – it is a list of transaction indexes for validating (required) 
+
 •	voter_id – this input is required to load next page transaction (required) 
+
 •	amounts – amount of each transaction (required) 
+
 •	block_hash – It is proof of work created by miner & will consider as block current hash (required) 
+
 •	block_raw – it is raw input of block_hash (required) 
+
 
 Response:
 
