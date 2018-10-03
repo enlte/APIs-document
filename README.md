@@ -11,11 +11,13 @@ Query Parameters:
 •	password - main wallet password (required). Must be 9 characters in length.
 
 Response: 
-```{
+```
+{
   "guid": "05f290be-dbef-4636-a809-868893c51711",
   "address": "13R9dBgKwBP29JKo11zhfi74YuBsMxJ4qY",
   "status": "true"
-}```
+}
+```
 
 2.	Make Payment
 
@@ -24,14 +26,16 @@ Query Parameters:
 •	signature- enlte signature to send coin (required). It contains the sender address.
 •	raw_data – raw data in base64 format  (required). It contains the receiver address, amount, comment, transaction fee (%).
 Response:
-```{
+```
+{
   "to" : "elt9c74owm3ndqyogjknwnhzmq1mju4njqzn7ad7",
   "from": "elt2c08mmmwogrkmmy5oweyotblzjczmjk1y55e2",
   "amount": 2000,
   "tx_fee": 10,
   "tx_hash": "f322d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c18e9c",
   "status": true
-}```
+}
+```
 
 3.	Get Wallet Balance
 
@@ -40,7 +44,9 @@ Endpoint: /transaction_blockchain/getUserBalance
 Query Parameters:
 •	address - user wallet address (required)
 Response:
+```
 {"status":"true","Balance":1000.87192847,"other_balance":"100.05305823433"}
+```
 
 Here other balance is coin earn from mining.
 
@@ -57,14 +63,16 @@ Query Parameters:
 Note: To load next page, APIs required the index of last transaction from list. And to load previous page, APIs required the index of first transaction from list.
 Response: 
 
- ```{
+ ```
+ {
     "total_tx": "30",
     "curr_hash": "00b341a6d24a02ff85d9910f1f45c48e17668040e042b39e99abbb76c4f1749f",
     "prev_hash": "004e9f8d5217c801c8480fcfb243a01ac825ef06285a8cd13b8c22f3f05462b7",
     "total_amt": "989783.9487004",
     "processed_time": "2018-09-26 10:39:57",
     "txs": [ -- transaction list--]
-}```
+}
+```
 
 
 2.	Single Transaction
@@ -74,7 +82,8 @@ Endpoint: /transaction_blockchain/transaction_detail
 Query Parameters:
 •	t_id – transaction id (required)
 Response:
-```{
+```
+{
     "data": [
         {
             "id": "68",
@@ -93,7 +102,8 @@ Response:
         }
     ],
     "status": true
-}```
+}
+```
 
 3.	Transaction list
 Endpoint: /transaction_blockchain/transactions_list 
@@ -107,7 +117,9 @@ Note:
 2.	If wallet id is empty, then it will return recently transactions.
 
 Response:
-```{"total_count":"45","txs":[  -- transaction list-- ],"status":"true" }```
+```
+{"total_count":"45","txs":[  -- transaction list-- ],"status":"true" }
+```
 
 
 # Mining Data API
@@ -116,7 +128,8 @@ Endpoint: /transaction_blockchain/miners
 
 Query Parameters: No parameters required
 Response:
-```{
+```
+{
     "status_code": 200,
     "status": "true",
     "data": {
@@ -124,7 +137,8 @@ Response:
         "active_user": 3,
         "inactive_user": 10
     }
-}```
+}
+```
 
 
 1.	Pending transactions
@@ -134,10 +148,12 @@ Endpoint: /transaction_blockchain/broadcast_unprocessed_hash
 Query Parameters: 
 •	index – this input is required to load next page transaction (optional) 
 Response:
-```{
+```
+{
     "status": "true",
     "data": [ --transaction list-- ]
-}```
+}
+```
 
 
 2.	Validate transactions
@@ -153,6 +169,8 @@ Query Parameters:
 •	block_raw – it is raw input of block_hash (required) 
 
 Response:
-```{"status": "true"}```
+```
+{"status": "true"}
+```
 
 
