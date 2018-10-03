@@ -77,6 +77,7 @@ Response:
 
 2.	Single Transaction
 
+
 Endpoint: /transaction_blockchain/transaction_detail 
 
 Query Parameters:
@@ -106,6 +107,7 @@ Response:
 ```
 
 3.	Transaction list
+
 Endpoint: /transaction_blockchain/transactions_list 
 
 Query Parameters:
@@ -124,6 +126,7 @@ Response:
 
 # Mining Data API
 1.	Miners
+
 Endpoint: /transaction_blockchain/miners 
 
 Query Parameters: No parameters required
@@ -143,6 +146,7 @@ Response:
 
 1.	Pending transactions
 
+
 Endpoint: /transaction_blockchain/broadcast_unprocessed_hash
 
 Query Parameters: 
@@ -158,6 +162,7 @@ Response:
 
 2.	Validate transactions
 
+
 Endpoint: /transaction_blockchain/vote_transactions
 
 Query Parameters: 
@@ -172,5 +177,3 @@ Response:
 ```
 {"status": "true"}
 ```
-
-
