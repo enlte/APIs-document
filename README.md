@@ -8,6 +8,7 @@ The Base URL for all APIs: https://enlte.com/
 
 Endpoint: /transaction_blockchain/createWallet
 Query Parameters:
+
 •	password - main wallet password (required). Must be 9 characters in length.
 
 Response: 
@@ -23,6 +24,7 @@ Response:
 
 Endpoint: /transaction_blockchain/coinTransfer
 Query Parameters:
+
 •	signature- enlte signature to send coin (required). It contains the sender address.
 •	raw_data – raw data in base64 format  (required). It contains the receiver address, amount, comment, transaction fee (%).
 Response:
@@ -42,6 +44,7 @@ Response:
 Endpoint: /transaction_blockchain/getUserBalance
 
 Query Parameters:
+
 •	address - user wallet address (required)
 Response:
 ```
@@ -57,6 +60,7 @@ Here other balance is coin earn from mining.
 Endpoint: /transaction_blockchain/single_block
 
 Query Parameters:
+
 •	block_id – block id of process transactions (required)
 •	trans_index – transaction index to load next page transactions (optional)
 •	loading_type – it is required to load next & previous page. (optional) e.g. next/prev/first/last
@@ -81,7 +85,9 @@ Response:
 Endpoint: /transaction_blockchain/transaction_detail 
 
 Query Parameters:
+
 •	t_id – transaction id (required)
+
 Response:
 ```
 {
@@ -111,9 +117,11 @@ Response:
 Endpoint: /transaction_blockchain/transactions_list 
 
 Query Parameters:
+
 •	wallet_id – public address of user (optional)
 •	trans_index – transaction index to load next page transactions (optional)
 •	loading_type – it is required to load next & previous page. (optional) e.g. next/prev/first/last
+
 Note: 
 1.	To load next page, APIs required the index of last transaction from list. And to load previous page, APIs required the index of first transaction from list.
 2.	If wallet id is empty, then it will return recently transactions.
@@ -130,6 +138,7 @@ Response:
 Endpoint: /transaction_blockchain/miners 
 
 Query Parameters: No parameters required
+
 Response:
 ```
 {
@@ -150,6 +159,7 @@ Response:
 Endpoint: /transaction_blockchain/broadcast_unprocessed_hash
 
 Query Parameters: 
+
 •	index – this input is required to load next page transaction (optional) 
 Response:
 ```
@@ -166,6 +176,7 @@ Response:
 Endpoint: /transaction_blockchain/vote_transactions
 
 Query Parameters: 
+
 •	tx_ids – it is a list of transaction ids for validating (required) 
 •	tx_indexes – it is a list of transaction indexes for validating (required) 
 •	voter_id – this input is required to load next page transaction (required) 
@@ -174,6 +185,7 @@ Query Parameters:
 •	block_raw – it is raw input of block_hash (required) 
 
 Response:
+
 ```
 {"status": "true"}
 ```
