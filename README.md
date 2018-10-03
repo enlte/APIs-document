@@ -1,6 +1,7 @@
 # APIs-document
         
-Blockchain Wallet API
+#Blockchain Wallet API
+
 Base URL to hit all APIs: https://enlte.com/
 
 1.	Creating a new Blockchain Wallet
