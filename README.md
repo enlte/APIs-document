@@ -109,7 +109,7 @@ Response:
             "previous_hash": "66a6f37d17e94db4dd9c65651521b60c1af2dc3c9eab02aad5805f0493f3be97",
             "current_hash": "47bcc6a294f38875bfbbdaf5813dcce7650128d4c24caf73f59bfbb3f4078c1f",
             "utc_date_time": "2018-09-26 10:39:57",
-            "tx_fee": "1",
+            "tx_fee_percentage": "1",
             "status": "1"
         }
     ],
@@ -140,7 +140,7 @@ Response:
 ```
 
 
-# Mining Data API
+# Mining Data API (Depricated)
 1.	Miners
 
 Endpoint: /transaction_blockchain/miners 
@@ -204,3 +204,7 @@ Response:
 ```
 {"status": "true"}
 ```
+
+We are mining the transactions internally using these APIs. We will upgrade the mining system from APIs to peer to peer network to quick response.
+
+
