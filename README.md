@@ -30,6 +30,7 @@ Endpoint: /transaction_blockchain/coinTransfer
 Query Parameters:
 
 •	signature- enlte signature to send coin (required). It contains the sender address.
+
 •	raw_data – raw data in base64 format  (required). It contains the receiver address, amount, comment, transaction fee (%).
 Response:
 ```
@@ -50,6 +51,7 @@ Endpoint: /transaction_blockchain/getUserBalance
 Query Parameters:
 
 •	address - user wallet address (required)
+
 Response:
 ```
 {"status":"true","Balance":1000.87192847,"other_balance":"100.05305823433"}
