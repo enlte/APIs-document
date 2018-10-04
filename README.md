@@ -7,6 +7,7 @@ The Base URL for all APIs: https://enlte.com/
 1.	Creating a new Blockchain Wallet
 
 Endpoint: /transaction_blockchain/createWallet
+
 Query Parameters:
 
 •	password - main wallet password (required). Must be 9 characters in length.
@@ -25,6 +26,7 @@ Response:
 2.	Make Payment
 
 Endpoint: /transaction_blockchain/coinTransfer
+
 Query Parameters:
 
 •	signature- enlte signature to send coin (required). It contains the sender address.
