@@ -205,6 +205,6 @@ Response:
 {"status": "true"}
 ```
 
-We are mining the transactions internally using these APIs. We will upgrade the mining system from APIs to peer to peer network to quick response.
+We are mining the transactions internally using these APIs. We will upgrade the mining system from APIs to peer to peer network.
 
 
