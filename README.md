@@ -140,7 +140,7 @@ Response:
 ```
 
 
-# Mining Data API (Depricated)
+# Mining Data APIs (Depricated)
 1.	Miners
 
 Endpoint: /transaction_blockchain/miners 
